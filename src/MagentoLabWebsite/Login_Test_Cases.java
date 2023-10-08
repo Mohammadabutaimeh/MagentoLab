@@ -11,13 +11,12 @@ public class Login_Test_Cases extends Parameters {
 	public void setup() {
 		driver.get(WebsiteURL);
 		driver.manage().window().maximize();
-
 	}
 
 	@Test()
-	public void FirstTest() {
-		System.out.println(Signup_Test_Cases.email);
-		System.out.println(Signup_Test_Cases.password);
+	public void LoginTest() {
+		driver.get(WebsiteURL);
+		driver.manage().window().maximize();
 		driver.findElement(By.xpath(SigninXpath)).click();
 		driver.findElement(By.id(SigninEmailId)).sendKeys(Signup_Test_Cases.email);
 		driver.findElement(By.id(SigninPasswordId)).sendKeys(Signup_Test_Cases.password);

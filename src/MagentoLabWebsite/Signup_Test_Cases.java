@@ -18,7 +18,7 @@ public class Signup_Test_Cases extends Parameters {
 	}
 
 	@Test()
-	public void FirstTest() {
+	public void SignupTest() {
 
 		driver.findElement(By.xpath(SignupXpath)).click();
 		driver.findElement(By.id(FirstNameId)).sendKeys(FirstName);
@@ -29,13 +29,14 @@ public class Signup_Test_Cases extends Parameters {
 		email = Email;
 		password = Password;
 		driver.findElement(By.xpath(SubmitXpath)).click();
-
+		driver.findElement(By.xpath(ArrowdownXpath)).click();
+		driver.findElement(By.xpath(LogoutXpath)).click();
 	}
+	
 
 	@AfterTest
 	public void PostTest() {
-		System.out.println(email);
-		System.out.println(password);
+		
 	}
 
 }

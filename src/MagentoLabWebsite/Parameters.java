@@ -19,7 +19,9 @@ public class Parameters {
 	static String SigninEmailId = "email";
 	static String SigninPasswordId = "pass";
 	static String SigninButtonId = "send2";
-
+	static String ArrowdownXpath = "//div[@class='panel header']//button[@type='button']";
+	static String LogoutXpath = "//div[@aria-hidden='false']//a[normalize-space()='Sign Out']";
+	
 	static String[] Names = { "Ahmed", "Mohammed", "Fatima", "Layla", "Ali", "Noor", "Reem" };
 	static String[] SecoundNames = { "Fadil", "Kareem", "Abdalraheem", "Nasser", "Majed", "Saeed", "Khalid" };
 	static String FirstName = chooseRandomName(Names);
